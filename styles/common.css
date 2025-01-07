@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "MinSans-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "MinSans-Regular";
+}
+:root {
+  /* Gradient */
+  --gradient_50: linear-gradient(#2ac9a4 0%, #3f80ea 100%);
+  --gradient_40: linear-gradient(#ffffff 0%, #deecff 100%);
+  /* primary */
+  --pr_70: #1e63d2;
+  --pr_60: #2c73e5;
+  --pr_50: #3f80ea;
+  --pr_40: #bcd6ff;
+  --pr_30: #deecff;
+  --pr_20: #f2f8ff;
+  --pr_10: #f3faff;
+  --pr_5: #f8fbff;
+  /* secondary */
+  --se_50: #2ac9a4;
+  --se_40: #b4ebde;
+  --se_30: #e0f6f1;
+  --se_20: #e9fcf8;
+  /* gray */
+  --gray_60: #121212;
+  --gray_50: #333333;
+  --gray_40: #666666;
+  --gray_30: #838383;
+  --gray_20: #e1e1e1;
+  --gray_10: #fafafa;
+  --gray_5: #ffffff;
+  /* length */
+  --col: 8.3rem;
+  --g: 1.2rem;
+  --gu: calc(var(--g) * 2); /* =2.8rem */ /* -v */
+  --row: 2rem;
+  --unit: calc(var(--col) + var(--gu));
+  --layout: calc(var(--unit) * 12 - var(--gu));
+}
+/* reset style */
+html {
+  font-size: 62.5%;
+}
+body,
+div,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: normal;
+}
+fieldset {
+  border: 0 none;
+}
+a {
+  text-decoration: none;
+  color: #666; /**/
+}
+a:hover {
+  text-decoration: underline;
+  color: #666; /**/
+}
+button {
+  cursor: pointer;
+}
+/* base style */
+body {
+  font-size: 16px; /**/
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+}
+address,
+em {
+  font-style: normal;
+}
+
+.hidden {
+  /* 읽기는 가능하고 안보이게 처리 */
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+}
+button {
+  font-family: "MinSans-Regular";
+}
+/* header Area */
+
+/* footer Area */
