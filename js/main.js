@@ -35,22 +35,19 @@ $(function () {
         function showNextSlide() {
             slideIndex = (slideIndex + 1);
             if (slideIndex >= totalSlides) {
-                slides.css('transform', 'none');
-                // slides.css('transform', `translateX(${-slideIndex * slideWidth}px)`);
-                slideIndex = 0;
-            } else {
-                slides.css('transform', `translateX(${-slideIndex * slideWidth}px)`);
-                // $firstSlide = slides.find().first().appendTo(slides);    
-            }
+                // 슬라이드가 마지막에 도달했을 때, 마지막 슬라이드를 표시
+                slideIndex = totalSlides - 1;
+            } 
+            slides.css('transform', `translateX(${-slideIndex * slideWidth}px)`);
 
         }
 
         function showPrveSlide() {
             slideIndex = (slideIndex - 1);
-            if (slideIndex < 1) {
+            if (slideIndex < 0) {
                 slides.css('transform', 'none');
                 // slides.css('transform', `translateX(${-slideIndex * slideWidth}px)`);
-                slideIndex = totalSlides;
+                slideIndex = 0;
             } else {
                 slides.css('transform', `translateX(${-slideIndex * slideWidth}px)`);
                 // $firstSlide = slides.find().first().appendTo(slides);    
